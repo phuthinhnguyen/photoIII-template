@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "Raleway";
+         
+        }
+        header{
+            position: relative;
+            max-width: 1500px;
+            margin: auto;
+          
+        }
+        header img{
+            width: 100%;
+            height: auto;
+            
+         
+        }
+        header .text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 1px solid white;
+            padding: 10px 20px;
+            color: white;
+            text-align: center;
+        }
+        .text h2{
+            font-size: 50px;
+            font-weight: lighter;
+            letter-spacing: 2px;
+            line-height: 10px;
+        }
+        .text p{
+            font-size: 20px;
+            letter-spacing: 7px;
+        }
+        nav{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%,30%);
+            background-color: lightgray;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+    
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            background-color: lightgray;
+            display: inline-block;
+            padding: 10px 20px;
+        
+        }
+        nav a:hover{
+            background-color: gray;
+        }
+        .img{
+            max-width:900px;
+            margin: auto;
+            margin-top: 40px;
+            padding: 20px;
+            
+        }
+        .img img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+        }
+        .contact{
+            max-width: 900px;
+            margin: auto;
+            background-color: rgba(211, 211, 211, 0.3);
+            padding: 20px;
+          
+        }
+        .contact h2{
+            font-size: 25px;
+            text-align: center;
+            margin-top: 40px;
+            font-weight: lighter;
+            
+        }
+        .contact p{
+            font-size: 15px;
+            margin-top: 40px;
+            line-height: 25px;
+        }
+        .contact label{
+            font-size: 15px;
+         
+        }
+        .contact input{
+            width: 100%;
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        button{
+            width: 100%;
+            height: 35px;
+            color: white;
+            background-color:gray ;
+            border: none;
+            margin-bottom: 30px;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: lightgray;
+            color: black;
+        }
+      
+        .contact a{
+            color: black;
+        }
+        .nav{   
+                display: none;
+                justify-content: center;
+                text-align: center;
+            }
+        .nav a{
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+            color: black;
+            background-color: lightgray;
+            display: block;
+   
+        }
+        .nav a:hover{
+            background-color: gray;
+        }
+        .homenav{
+            border-radius: 5px 0 0 5px;
+        }
+        .contactnav{
+            border-radius: 0px 5px 5px 0px;
+        }
+        @media only screen and (max-width:1000px){
+            header p{
+                display: none;
+            }
+            header .text h2{
+                font-size: 30px;
+            }
+        }
+        @media only screen and (max-width:800px){
+            header .text h2{
+                font-size: 20px;
+            }
+          
+            
+        }
+        @media only screen and (max-width:700px){
+            header .text h2{
+                font-size: 15px;
+            }
+            nav{
+                display: none;
+            }
+            .nav{
+                display: flex;
+            }
+        
+        }
+        @media only screen and (max-width:400px){
+            header .text h2{
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="photographer.jpg" alt="">
+        <div class="text">
+            <h2>JANE DOE</h2>
+            <p>PHOTOGRAPHER</p>
+        </div>
+        <nav>
+            <a href="">Home</a>
+            <a href="#img">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="nav">
+        <a class="homenav"href="">Home</a>
+        <a href="#img">Portfolio</a>
+        <a class="contactnav" href="#contact">Contact</a>
+    </div>
+    <div class="img" id="img">
+        <img src="ocean.jpg" alt="">
+        <img src="ocean2.jpg" alt="">
+        <img src="falls2.jpg" alt="">
+        <img src="mountainskies.jpg" alt="">
+        <img src="mountains2.jpg" alt="">
+    </div>
+    <div class="contact" id="contact">
+        <h2>CONTACT</h2>
+        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus.</p>
+        <label for="">Name</label>
+        <input type="text">
+        <label for="">Email</label>
+        <input type="text">
+        <label for="">Message</label>
+        <input type="text">
+        <button type="submit">Send</button>
+        <span>Powered by &nbsp;</span><a href="">w3.css</a>
+    </div>
+</body>
+</html>
